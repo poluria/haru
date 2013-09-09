@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer"></div>
+  </body>
+</html>
+{% endautoescape %}

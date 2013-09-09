@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div><a href="/images/upload">이미지업로드</a></div>
+<form action="/posts/create" method="post">
+  <div><textarea name="content" rows="3" cols="60"></textarea></div>
+  {% if image_url %}<div><img src="{{image_url}}"/></div>{% endif %}
+  <div><input type="submit" value="Sign Guestbook"></div>
+</form>
+{% endblock %}

@@ -1,0 +1,9 @@
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  background-color: #DDDDDD;
+}
+
+.post {
+  border: 1px solid;
+  padding: 1px;
+}

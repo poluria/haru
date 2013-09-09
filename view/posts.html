@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div>
+  <b>Guestbook</b>
+  <a href="/posts/create">새글쓰기</a>
+</div>
+<div>
+  {% for greeting in greetings %}
+  <div class="post">
+  <div>{{ greeting.author.nickname() }} {{greeting.date}}</div>
+  <div>{{ greeting.content }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
